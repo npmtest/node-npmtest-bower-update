@@ -1,1 +1,40 @@
-{     "devDependencies": {         "bower-update": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-bower-update",     "homepage": "https://github.com/npmtest/node-npmtest-bower-update",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-bower-update.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### basic test coverage for  [bower-update (v0.2.0)](https://github.com/sapegin/bower-update)  [![npm package](https://img.shields.io/npm/v/npmtest-bower-update.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bower-update) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bower-update.svg)](https://travis-ci.org/npmtest/node-npmtest-bower-update)",
+    "devDependencies": {
+        "bower-update": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-bower-update",
+    "keywords": [
+        "coverage",
+        "test",
+        "bower-update"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_bower_update.js",
+    "name": "npmtest-bower-update",
+    "nameAlias": "npmtest_bower_update",
+    "nameOriginal": "npmtest-bower-update",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-bower-update.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
