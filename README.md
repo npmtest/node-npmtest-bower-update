@@ -1,6 +1,6 @@
 # npmtest-bower-update
 
-#### basic test coverage for  [bower-update (v0.2.0)](https://github.com/sapegin/bower-update)  [![npm package](https://img.shields.io/npm/v/npmtest-bower-update.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bower-update) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bower-update.svg)](https://travis-ci.org/npmtest/node-npmtest-bower-update)
+#### basic test-coverage for  [bower-update (v0.2.0)](https://github.com/sapegin/bower-update)  [![npm package](https://img.shields.io/npm/v/npmtest-bower-update.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-bower-update) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-bower-update.svg)](https://travis-ci.org/npmtest/node-npmtest-bower-update)
 
 #### Updates Bower components to the really latest versions.
 
